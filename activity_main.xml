@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/headtxt"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnblue"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/btnred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnred"
+            app:backgroundTint="#CC1010" />
+
+        <Button
+            android:id="@+id/btnyelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnyelow"
+            app:backgroundTint="#FFEA07" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnpink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnpink"
+            app:backgroundTint="#E91E63" />
+
+        <Button
+            android:id="@+id/btngreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btngreen"
+            app:backgroundTint="#4CAF50" />
+
+        <Button
+            android:id="@+id/btnpourple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnpourple"
+            app:backgroundTint="#9C27B0" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnplas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/style"
+        android:text="+"
+        android:textSize="30dp" />
+
+    <Space android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/style"
+        android:text="-"
+        android:textSize="30dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnchange"
+            android:layout_width="254dp"
+            android:layout_height="47dp"
+            android:backgroundTint="@color/black"
+            android:text="برای تغییر رنگ اینجا رو کلیک کنید "
+            android:textColor="#F4F4F4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="228dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:background="@drawable/style"
+            android:hint="name"
+            android:padding="8dp"
+            android:textDirection="rtl"
+            android:textColor="#3C3A3A"
+            android:textStyle="bold" />  </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edt_family"
+            android:layout_width="228dp"
+            android:layout_margin="10dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:background="@drawable/style"
+            android:hint="family"
+            android:padding="8dp"
+            android:textDirection="rtl"
+            android:textColor="#3E3B3B"
+            android:textStyle="bold" />  </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btnintent"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:background="@drawable/style"
+            android:layout_gravity="center"
+            android:text="ثبت و رفتن به صبحه بعدی "
+            android:textSize="20sp"
+
+
+
+             />  </LinearLayout>
+
+
+
+
+
+</TableLayout>
